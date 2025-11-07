@@ -57,4 +57,13 @@ def gerar_relatorio_final(funcoes_concluidas):
     ->
     "Desafio concluído! 2 funções implementadas com sucesso."
     """
-    pass
+    funcoes = ["mostrar_mensagem_inicial", "listar_comandos_git_basicos", "criar_mensagem_commit", "verificar_tag_valida"]
+
+    for function in funcoes:
+        if function not in funcoes_concluidas:
+            print("Função não concluída")
+        else: 
+            print("Função concluída")
+
+funcoes_concluidas = ["mostrar_mensagem_inicial", "listar_comandos_git_basicos", "criar_mensagem_commit"]
+print(gerar_relatorio_final(funcoes_concluidas))
