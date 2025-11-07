@@ -51,7 +51,6 @@ def verificar_tag_valida(tag):
             return True
     return False
 
-
 def gerar_relatorio_final(funcoes_concluidas):
     """
     Recebe uma lista com os nomes das funções implementadas
