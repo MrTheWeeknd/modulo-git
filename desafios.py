@@ -45,8 +45,11 @@ def verificar_tag_valida(tag):
     Verifica se uma tag está no formato 'vX.Y' (ex: v1.0, v2.1).
     Retorna True se o formato for válido, caso contrário False.
     """
-    pass
-
+    if tag[0] == "v":
+        partes = tag[1:].split(".")
+        if len(partes) >= 2 and partes[0].isdigit() and partes[1].isdigit():
+            return True
+    return False
 
 def gerar_relatorio_final(funcoes_concluidas):
     """
